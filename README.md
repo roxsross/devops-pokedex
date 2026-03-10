@@ -82,7 +82,7 @@ La aplicación sigue un patrón **BFF (Backend For Frontend)**. El frontend nunc
 ## Estructura del proyecto
 
 ```
-devops-pokedex-v2/
+devops-pokedex/
 ├── docker-compose.yml          # Orquestación de servicios
 ├── README.md
 │
@@ -155,7 +155,7 @@ devops-pokedex-v2/
 ```bash
 # Clonar el repositorio
 git clone <URL_DEL_REPO>
-cd devops-pokedex-v2
+cd devops-pokedex
 
 # Construir y levantar ambos servicios
 docker compose up --build

@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  background: rgba(10, 10, 15, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  gap: 1rem;
+}
+
+.nav-logo {
+  text-decoration: none;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  display: flex;
+  gap: 4px;
+}
+
+.logo-poke {
+  color: #F08030;
+}
+
+.logo-verse {
+  color: #6890F0;
+}
+
+.nav-counter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Exo 2", sans-serif;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.counter-number {
+  font-weight: 700;
+  color: #F8D030;
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0.6rem 1rem;
+    flex-wrap: wrap;
+  }
+  .nav-logo {
+    font-size: 0.75rem;
+  }
+}

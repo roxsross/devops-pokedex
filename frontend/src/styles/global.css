@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0a0a0f;
+  --text: #f0f0f0;
+  --text-muted: #888;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Animated background particles */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    radial-gradient(circle at 20% 30%, #F0803022 1px, transparent 1px),
+    radial-gradient(circle at 60% 70%, #6890F022 1px, transparent 1px),
+    radial-gradient(circle at 80% 20%, #78C85022 1px, transparent 1px),
+    radial-gradient(circle at 40% 80%, #F8D03022 1px, transparent 1px),
+    radial-gradient(circle at 10% 90%, #F8588822 1px, transparent 1px),
+    radial-gradient(circle at 90% 50%, #70589822 1px, transparent 1px);
+  background-size:
+    120px 120px,
+    150px 150px,
+    100px 100px,
+    130px 130px,
+    110px 110px,
+    140px 140px;
+  animation: bgDrift 30s linear infinite;
+}
+
+@keyframes bgDrift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-50px, -50px); }
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: "Exo 2", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

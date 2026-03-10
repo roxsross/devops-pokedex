@@ -1,0 +1,22 @@
+.type-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid;
+  cursor: default;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.type-badge[role="button"] {
+  cursor: pointer;
+}
+
+.type-badge[role="button"]:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}

@@ -1,0 +1,65 @@
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  border-color: var(--glow-color);
+  box-shadow: 0 0 20px var(--glow-color), 0 0 40px color-mix(in srgb, var(--glow-color) 30%, transparent);
+}
+
+.card-sprite-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem 0.5rem;
+  min-height: 140px;
+}
+
+.card-sprite {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  image-rendering: auto;
+}
+
+.pokemon-card:hover .card-sprite {
+  transform: translateY(-6px) scale(1.08);
+}
+
+.card-info {
+  padding: 0.75rem 1rem 1rem;
+  text-align: center;
+}
+
+.card-id {
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.card-name {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  margin: 0.4rem 0 0.6rem;
+  color: #f0f0f0;
+}
+
+.card-types {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

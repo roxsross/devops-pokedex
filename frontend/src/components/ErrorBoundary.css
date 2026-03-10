@@ -1,0 +1,50 @@
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.gengar-svg {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.error-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+}
+
+.error-message {
+  font-family: "Exo 2", sans-serif;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.error-btn {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  background: #705898;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.error-btn:hover {
+  background: #8a70b0;
+}
